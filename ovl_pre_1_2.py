@@ -49,7 +49,7 @@ def adjust_offset(otoini):
             oto.overlap -= dt
             oto.preutterance -= dt
             oto.consonant -= dt
-            oto.cutoff2 += dt
+            oto.cutoff2 -= dt
             try:
                 ratio = oto.overlap / oto.preutterance
             except ZeroDivisionError as e:
