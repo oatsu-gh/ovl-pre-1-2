@@ -43,7 +43,7 @@ def adjust_offset(otoini):
             continue
         if ratio > 0.5:
             warn_counter += 1
-            print(f'[WARN] 0.5 より大 :\t{oto.alias}\t{ratio}', end='\t')
+            print(f'[INFO] 0.5 より大 :\t{oto.alias}\t{ratio}', end='\t')
             dt =  (2 * oto.overlap) - oto.preutterance
             oto.offset += dt
             oto.overlap -= dt
